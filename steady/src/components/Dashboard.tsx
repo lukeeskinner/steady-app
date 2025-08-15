@@ -1,6 +1,7 @@
 import { useState } from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { HomeIcon, PersonIcon, ListBulletIcon, ActivityLogIcon, ReaderIcon } from "@radix-ui/react-icons";
+import Habits from "./Habits";
 import "../Styles/Dashboard.css";
 
 const Dashboard: React.FC = () => {
@@ -71,7 +72,6 @@ const Dashboard: React.FC = () => {
   );
 };
 
-// Placeholder components for each view
 const HomeView = () => (
   <div className="view-container">
     <h2>Home</h2>
@@ -94,10 +94,7 @@ const FeedView = () => (
 );
 
 const HabitsView = () => (
-  <div className="view-container">
-    <h2>Habits</h2>
-    <p>Manage your habits and routines.</p>
-  </div>
+    <Habits />
 );
 
 const ProfileView = () => (

@@ -18,7 +18,7 @@ const Login: React.FC = () => {
 
   const handleInputChange = (field: string, value: string | boolean) => {
     setFormData(prev => ({ ...prev, [field]: value }));
-    setError(""); // Clear error when user starts typing
+    setError(""); 
   };
 
   const validateForm = () => {
